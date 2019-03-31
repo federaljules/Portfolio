@@ -1,0 +1,56 @@
+.overlayMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(224deg, #32f24a, #ce3c2c);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlayMenu-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'IBM Plex Mono', monospace;
+    
+  }
+  
+  .overlayMenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .overlayMenu a:hover, .overlayMenu a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
+  .overlayMenu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlayMenu a {font-size: 20px}
+    .overlayMenu .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
